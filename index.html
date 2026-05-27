@@ -4,21 +4,36 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <link rel="apple-touch-icon" href="./icons/icon-192.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no" />
+
+    <!-- Viewport: strict mobile rendering pentru orice webview Android -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- PWA / iOS -->
     <meta name="theme-color" content="#000000" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="apple-mobile-web-app-title" content="CEO Tracker" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="format-detection" content="telephone=no" />
+
     <meta name="description" content="Calculator premium de performanță zilnică cu AI ultra-puternic — pentru tineri ambițioși." />
     <title>CEO Tracker AI Premium</title>
-    <script type="module" crossorigin src="./assets/index-DQ5QiZIz.js"></script>
+
+    <style>
+      /* Inline anti-FOUC + mobile-first guard (rulează înainte de CSS bundle) */
+      html, body { margin: 0; padding: 0; width: 100%; background: #000; color: #fff; -webkit-text-size-adjust: 100%; -moz-text-size-adjust: 100%; text-size-adjust: 100%; }
+      body { overflow-x: hidden; touch-action: manipulation; }
+      #root { width: 100%; min-height: 100vh; min-height: 100dvh; }
+    </style>
+    <script type="module" crossorigin src="./assets/index-DiG9qVNS.js"></script>
     <link rel="modulepreload" crossorigin href="./assets/rolldown-runtime-Cyuzqnbw.js">
     <link rel="modulepreload" crossorigin href="./assets/charts-DDQbchWb.js">
     <link rel="modulepreload" crossorigin href="./assets/export-DV6bAfKX.js">
     <link rel="modulepreload" crossorigin href="./assets/react-vendor-BpuzxIov.js">
-    <link rel="stylesheet" crossorigin href="./assets/index-CneKzc_V.css">
+    <link rel="stylesheet" crossorigin href="./assets/index-f8gdm9vC.css">
   <link rel="manifest" href="./manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="./registerSW.js"></script></head>
   <body>
     <div id="root"></div>
